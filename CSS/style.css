@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Monoton', cursive;
 }
 .container{
     width: 100%;
@@ -38,37 +40,37 @@
     background-color: rgba(0,0,0,0.5);
 }
 .horarios ul{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 .horarios ul li{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    
-    margin: 20px;
+ 
 }
 .horarios ul li span{
+    width: 120px;
+    height: 120px;
     color: rgb(255, 153, 0);
     font-size: 20px;
-    margin-bottom: 20px;
-}
-.hora{
-    width: 100px;
-    height: 100px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+}
+.hora{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     font-size: 20px;    
     color: rgb(204, 204, 204);
     background: rgba(255, 145, 0, 0.637);
     box-shadow: 0 0 5px rgba(0, 0, 0,0.9);
+    
 }
 .hora:hover{
     border: 3px solid rgb(255, 153, 0,5); 
@@ -106,12 +108,11 @@
     margin: 10px auto;
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
 }
 .cardText{
     width: 90%;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 /*              sobre               */
@@ -133,18 +134,18 @@
 .textSobre{
     background: rgba(105, 105, 105, 0.7) ;
     max-width:400px;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     margin: 10px 0;
+    padding: 20px 0;
 }
 .textSobre span{
     width: 90%;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 700;
     text-align: justify;
 }
 .imgSobre{
@@ -178,14 +179,11 @@
 .gradeImg{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5px 0;
+    justify-content: center;
 }
 .boxImg {
     width: 100vmin;
-    max-width: 150px;
-    
-    
+    max-width: 250px;
 }
 .boxImg  img{
     width: 100%;
@@ -214,7 +212,7 @@
     color: #fff;
     width: 90%;
     height: 100px;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +225,6 @@
     height: 100px;
 }
 .mapBox{
-    background-color: yellowgreen;
     width: 90%;
     height: 50vh;
     opacity: 0.4;
@@ -275,20 +272,16 @@ footer{
 }
 .contato h1 {
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    text-shadow: 2px 10px 100px white;
-    font-weight: bold;
+    font-size: 40px;
 }
 .contato h2 {
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
     margin: 20px;
 }
 .contato a {
     color: red;
     font-size: 40px;
-    font-weight: bold;
 }
 .contato a:hover {
     color: rgb(255, 83, 83);
@@ -339,6 +332,9 @@ footer{
     .card{
         max-width: 150px;
     }
-    
+    .boxImg {
+        width: 100vmin;
+        max-width: 150px;
+    }
 }
 
