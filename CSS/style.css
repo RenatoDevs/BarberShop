@@ -68,7 +68,7 @@
     font-size: 20px;    
     color: rgb(204, 204, 204);
     background: rgba(255, 145, 0, 0.637);
-    box-shadow: 0 0 10px rgba(0, 0, 0,0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.9);
 }
 .hora:hover{
     border: 3px solid rgb(255, 153, 0,5); 
@@ -162,7 +162,7 @@
 /*              Galeria                 */
 .galeria{
     width: 100%;
-    min-height: 50vh;
+    min-height: 20vh;
     padding: 50px 0 ;
     display: flex;
     flex-direction: column;
@@ -178,13 +178,13 @@
 .gradeImg{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
     justify-content: space-around;
+    margin: 5px 0;
 }
 .boxImg {
     width: 100vmin;
-    max-width: 230px;
-    min-height: 50vh;
+    max-width: 150px;
+    
     
 }
 .boxImg  img{
@@ -207,12 +207,13 @@
     background-attachment: fixed;
     background-position: center;
     padding: 50px 0 ;
+    flex-direction:column;
 
 }
 .mapText{
     color: #fff;
-    max-width: 300px;
-    height: 50vh;
+    width: 90%;
+    height: 100px;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -227,8 +228,7 @@
 }
 .mapBox{
     background-color: yellowgreen;
-    width: 100vmin;
-    max-width: 800px;
+    width: 90%;
     height: 50vh;
     opacity: 0.4;
     position: relative;
@@ -339,19 +339,6 @@ footer{
     .card{
         max-width: 150px;
     }
-    .localizacao{
-        min-height: 120vh;
-        flex-wrap: wrap;
-        flex-direction:column;
     
-    }
-    .interior{
-        display: none;
-    }
-    .mapBox{
-        width: 90%;
-        height: 60vh;
-        opacity: 0.7;
-    }
 }
 
