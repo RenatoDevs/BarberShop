@@ -12,7 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <!--                Swiper                      -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/swipeStyle.css" />
+    <link rel="stylesheet" href="./css/swiperStyle.css" />
     <!--                Imagem do barra do navegador-->
     <link rel="icon" href="./logos/sm.png" type="image/png">
 
@@ -40,7 +40,41 @@
     <main>
         <section class="container">
             <section class="top">
-                <div class="logoTop"></div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="area1">
+                                <img src="./imagens/nathon-oski-EW_rqoSdDes-unsplash.jpg" alt="">
+                                <div class="textTop">
+                                    <h1>Estilo e conforto</h1>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="area1">
+                                <div class="topImg">
+                                    <img src="./imagens/nathon-oski-fE42nRlBcG8-unsplash.jpg" alt="">
+                                    <img src="./imagens/reis-26-z0Cyh9nGLFY-unsplash.jpg" alt="">
+                                </div>
+                                <div class="textTop">
+                                    <h1>Barba e Cabelo</h1>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="area1">
+                                <img src="./imagens/tommy-van-kessel-ZPRBeg7Lsh0-unsplash.jpg" alt="">
+                                <div class="textTop">
+                                    <h1>Corte Infantil</h1>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
             <section class="conteudo">
                 <div class="boxHorario">
@@ -120,11 +154,34 @@
                     </span>
                 </div>
             </section>
-            <section class="localizacao">
-                <div class="interior">
-                    <img src="./imagens/jason-leung-2seUdPQNy_I-unsplash.jpg" alt="">
+            <section class="galeria">
+                <div>
+                    <h1>Galeria</h1>
                 </div>
-                <div class="map">
+                
+                <div class="gradeImg">
+                    <div class="boxImg">
+                        <img src="./imagens/delfina-pan-wJoB8D3hnzc-unsplash.jpg" alt="">
+                    </div>
+                    <div class="boxImg">
+                        <img src="./imagens/obi-onyeador--sRVfY0f2d8-unsplash.jpg" alt="">
+                    </div>
+                    <div class="boxImg">
+                        <img src="./imagens/salah-regouane-MRCdF3qUbp0-unsplash.jpg" alt="">
+                    </div>
+                    <div class="boxImg">
+                        <img src="./imagens/nathon-oski-fE42nRlBcG8-unsplash.jpg" alt="">
+                    </div>
+                    <div class="boxImg">
+                        <img src="./imagens/jason-leung-2seUdPQNy_I-unsplash.jpg" alt="">
+                    </div>
+                    <div class="boxImg">
+                        <img src="./imagens/juan-carlos-pavon-jQ7Fh1q97AU-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                
+            </section>
+            <section class="localizacao">
                     <dix class="mapBox">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29233.61326528221!2d-46.53827269724844!3d-23.668745366286487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sprefeitura%20santo%20andre!5e0!3m2!1spt-BR!2sbr!4v1641344001318!5m2!1spt-BR!2sbr"
@@ -133,20 +190,13 @@
                     <div class="mapText">
                         <span">
                             Av. Lino Jardim, 272 - Vila Bastos, Santo André - SP, 09041-031
-                        </span>
+                            </span>
                     </div>
-
-
-                </div>
             </section>
-
-
-
-
         </section>
         <footer>
             <div id="ct" class="contato">
-                <h1>StudioMoveis</h1>
+                <h1>BarberShop</h1>
                 <h2>Visite nossas Redes sociais</h2>
                 <ul class="sci">
                     <li><a href="#">
@@ -164,6 +214,22 @@
     </main>
 
     <script src="./menuBar/mobileNavBar.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>
