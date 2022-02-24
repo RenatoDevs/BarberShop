@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Monoton', cursive;
+    word-spacing: 5px;
 }
 .container{
     width: 100%;
@@ -30,59 +31,7 @@
     background-attachment: fixed;
     background-position: center;
 }
-.boxHorario{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5);
-    padding: 50px 0;
-}
-.horarios{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.horarios ul{
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.horarios ul li{
-    list-style: none;
- 
-}
-.horarios ul li span{
-    width: 100px;
-    height: 100px;
-    color: rgb(255, 153, 0);
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hora{
-    width: 90px;
-    height: 90px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;    
-    color: rgb(204, 204, 204);
-    background: rgba(255, 145, 0, 0.637);
-    box-shadow: 0 0 5px rgba(0, 0, 0,0.9);
-    
-}
-.hora:hover{
-    border: 3px solid rgb(255, 153, 0,5); 
-    box-shadow: inset 0 0 30px rgb(255, 145, 0);
-}
+
 .boxCard{
     width: 100%;
     min-height: 45vh;
@@ -203,21 +152,22 @@
 /*          localização         */
 .localizacao{
     max-width: 100%;
-    min-height:50vh;
+    min-height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background: url(../imagens/jason-leung-2seUdPQNy_I-unsplash.jpg)no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding: 50px 0 ;
-    flex-direction:column;
+    padding: 70px 0 ;
+    color: #fff;
 
 }
 .mapText{
-    color: #fff;
-    width: 90%;
+    
+    width: 100%;
     height: 100px;
     font-size: 20px;
     display: flex;
@@ -227,29 +177,79 @@
     background-color: rgba(0, 30, 85, 0.5);
     position: relative;
 }
+.containerLocalizacao{
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.753) ;
+}
 .mapText span{
     width: 90%;
-    height: 100px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mapBox{
-    width: 90%;
-    height: 50vh;
-    opacity: 0.4;
-    position: relative;
+    flex:1 1 400px;
+    width: 100%;
+    height: 100%;
+    min-height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .mapBox:hover{
     opacity: 0.9;
 }
 .mapBox iframe{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
-   
-   
+    height:91vh;
+}
+form{
+    width: 100%;
+    max-width: 450px;
+    min-height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+form input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(150, 150, 150, 0.363) ;
+    border: none;
+    border-radius: 10px;
+}
 
+.radio input{
+    display: inline-block;
+}
+.radio label{
     
+    width: 150px;
+    display: inline-block;
+}
+.textArea{
+    width: 90%;
+    background: rgba(150, 150, 150, 0.363) ;
+    border: none;
+    border-radius: 10px;
+}
+.btEnviar{
+    background-color: #e51e2a;
+    color: #fff;
+    font-size: 30px;
 }
 /*          Footer              */
 
@@ -301,7 +301,7 @@ footer{
 }
 
 .sci{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -311,26 +311,18 @@ footer{
    list-style: none;
 }
 .sci a {
-    display: inline-block;
-    margin-left: 15px;
-    background:#222;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 50%;
+    text-decoration: none;
     transition: 0.2s ease-in-out;
+    margin: 20px;
 }
 .sci a:hover {
-    background: #e51e2a;
+    text-shadow:  0 0 20px #e51e2a;
     transform: translateY(-10px);
 }
 .sci a ion-icon{
     color: #fff;
     font-size: 30px;
 }
-
 @media (max-width:999px) {
     
     .textSobre{
